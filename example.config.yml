@@ -1,0 +1,11 @@
+toggl:
+    email: you@example.com
+    workspace_id: 123456
+    api_token: your-api-token
+    api_path: /details
+bling:
+    base_url: https://bling.torchbox.com
+    billing_agent_project_id: 1333
+    rate_id: 8 #webdev
+    endpoint: /api/bling/add/ # trailing slash is important!?
+    ldap_user: your-tbx-ldap-username
