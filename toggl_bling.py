@@ -79,7 +79,7 @@ def main():
         for thing in toggl_things:
             print("{} at {} mins at {}".format(thing['description'], thing['duration'], thing['start']))
 
-        send_yn = input("\nSend to bling? ")
+        send_yn = raw_input("\nSend to bling? ")
 
         if (send_yn == "y"):
             send_to_bling()
