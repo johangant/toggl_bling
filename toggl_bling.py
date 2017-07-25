@@ -61,7 +61,7 @@ def main():
         task_id = thing['id']
         desc = thing['description']
         start = thing['start']
-        dur_mins = round(thing['dur'] / 1000 / 60)
+        dur_mins = int(round(thing['dur'] / 1000 / 60))
         client = thing['client']
         project = thing['project']
 
@@ -117,6 +117,9 @@ def send_to_bling():
             'time_client': item['duration'],
             'details': item['description'],
         }
+
+        # print payload
+        # return
 
         p = requests.post(api_endpoint, data = payload, headers = headers)
 
